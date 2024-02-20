@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 600 !important;
+  line-height: normal !important;
+  width: 100%;
+  height: 100dvh;
+}
+.row {
+  --bs-gutter-x: 1rem, 1rem;
+}
+h3 {
+  font-size: 47px;
+}
+p {
+  font-size: 22px;
+}
+span {
+  font-size: 24px;
+}
+.webkit-scrollbar-track {
+  height: 0px;
+  width: 0%;
+}
+/* Header section */
+.header-container {
+  background-color: #af3100;
+  color: #ffffff;
+  height: 9vh;
+}
+.logo-section img {
+  justify-content: space-evenly;
+  height: 65px;
+  /* width: 65px; */
+}
+.logo-section h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.nav-links-list {
+  list-style: none;
+  font-size: 22px;
+  transform: translate(10px, 5px);
+}
+.nav-links-list li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Corousel section */
+.corousel_block {
+  width: 100%;
+  padding: 0;
+  /* background-color: pink; */
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 10px;
+}
+.carousel-indicators .active {
+  background-color: #fff;
+}
+.carousel-item {
+  height: 80vh;
+  /* object-fit: cover; */
+}
+.carousel-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* Welcom section */
+.welcome-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+  padding: 0 12%;
+}
+.welcome-content div h1 {
+  font-size: 47px;
+}
+.welcome-content div p {
+  font-size: 22px;
+}
+/* marquee section */
+
+.marquee-container {
+  overflow: hidden;
+  margin-top: 2%;
+}
+.marquee-image {
+  width: 10%; /* Set width to 100% to ensure responsiveness */
+  height: auto; /* Allow height to adjust proportionally */
+  object-fit: cover; /* Ensure images cover the entire container */
+}
+.marquee {
+  animation-duration: 22s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.marquee:nth-child(1) {
+  animation-name: marquee-left;
+}
+.marquee:nth-child(2) {
+  animation-name: marquee-right;
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+#marquee_top {
+  animation-direction: reverse;
+}
+/* visit section */
+.visit-section {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 7% 12%;
+}
+.visit-content h1 {
+  font-size: 47px;
+}
+.visit-content button {
+  width: 30%;
+  height: 63px;
+  background-color: #af3100;
+  font-size: 22px;
+  color: #ffffff;
+  border: none;
+  border-radius: 100px;
+}
+/* Gallery section */
+.gallery-section {
+  margin-top: 2%;
+}
+.gallery-content h1 {
+  font-size: 47px;
+}
+.gallery-image {
+  width: 29%;
+  height: auto;
+  object-fit: cover; /* Ensure images cover the entire container */
+}
+.gallery-info p {
+  font-size: 22px;
+}
+.gallery_btn {
+  background-color: #af3100;
+  color: #ffffff;
+  border: none;
+  border-radius: 100px;
+  width: 30%;
+  height: 63px;
+  font-size: 22px;
+}
+.members-section {
+  margin-top: 2%;
+}
+.members-section h1 {
+  font-size: 47px;
+}
+.members-section .card {
+  background-color: #af3100;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  height: 25rem;
+  width: 19%;
+}
+.members-section .card img {
+  width: 60%;
+}
+.card .card-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.card .card-text {
+  font-size: 17px;
+  font-weight: 300;
+}
+/* Footer section */
+.subscribe-section {
+  color: #ffffff;
+  height: 10vh;
+}
+.subscribe-content input {
+  border: none;
+  border-radius: 10px;
+  height: 5vh;
+}
+.footer-section {
+  color: #ffffff;
+  background-image: url(./images/footer_bg.svg);
+  /* background-size: 50%; */
+  background-position: center;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.footer_data {
+  padding: 5% 11%;
+}
+.footer_data h5 {
+  font-size: 35px;
+}
+.footer_data a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer_data h6 {
+  font-size: 28px;
+}
+.footer_data span,
+.copywrite span {
+  font-size: 24px;
+}

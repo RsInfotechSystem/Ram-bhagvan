@@ -1,0 +1,222 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  p {
+    font-size: 13px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .header-container {
+    margin-top: 5%;
+  }
+  .logo-section h1 {
+    font-size: 10px;
+  }
+  .logo-section img {
+    height: 45px;
+  }
+  .nav-links-list {
+    font-size: 10px;
+  }
+  .carousel-item {
+    height: 80vh;
+    object-fit: cover;
+  }
+  .welcome-section {
+    margin-top: 5%;
+    padding: 0 5%;
+  }
+  .welcome-content div h1 {
+    font-size: 28px;
+  }
+  /* .welcome-content div p {
+    font-size: 13px;
+  } */
+  .marquee-image {
+    width: 10%;
+  }
+  .visit-section {
+    padding: 0;
+    margin-top: 5%;
+  }
+  .visit-content h1 {
+    font-size: 28px;
+  }
+  /* .visit-content p {
+    font-size: 13px;
+  } */
+  .visit-content button {
+    width: 50%;
+    height: 50px;
+    font-size: 15px;
+  }
+  .marquee-container {
+    margin-top: 5%;
+  }
+  .gallery-section {
+    margin-top: 5%;
+  }
+  .gallery-content h1 {
+    font-size: 28px;
+  }
+  .gallery-image {
+    width: 26%;
+    height: auto;
+    object-fit: cover; /* Ensure images cover the entire container */
+  }
+  /* .gallery-info p {
+    font-size: 13px;
+  } */
+  .gallery_btn {
+    width: 30%;
+    height: 50px;
+    font-size: 15px;
+  }
+  .members-section {
+    margin-top: 5%;
+  }
+  .members-section h1 {
+    font-size: 28px;
+  }
+  .members-section .card {
+    width: 27%;
+    height: auto;
+  }
+  /* .subscribe-section p {
+    font-size: 15px;
+  } */
+  .footer-section {
+    background-position: center;
+    height: 72vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .footer_data {
+    padding: 8% 10%;
+  }
+  .footer_data h5 {
+    font-size: 15px;
+  }
+  .footer_data h6 {
+    font-size: 12px;
+  }
+  .footer_data span,
+  .copywrite span {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 600 !important;
+    line-height: normal !important;
+    width: 100%;
+    height: 100dvh;
+  }
+
+  .logo-section h1 {
+    font-size: 19px;
+  }
+  .logo-section img {
+    height: 32px;
+    width: 60px;
+  }
+  .nav-links-list {
+    font-size: 10px;
+  }
+  .welcome-section {
+    padding: 0;
+  }
+  /* .welcome-content div h1 {
+    font-size: 28px;
+  } */
+  /* .welcome-content div p {
+    font-size: 13px;
+  } */
+  .marquee-image {
+    width: 11%;
+  }
+  .visit-section {
+    padding: 0;
+  }
+  /* .visit-content h1 {
+    font-size: 28px;
+  } */
+  /* .visit-content p {
+    font-size: 13px;
+  } */
+  .visit-content button {
+    width: 70%;
+    height: 60px;
+    font-size: 22px;
+  }
+  /* .gallery-content h1 {
+    font-size: 28px;
+  } */
+  .gallery-image {
+    width: 50%; /* Set width to 100% to ensure responsiveness */
+    height: auto; /* Allow height to adjust proportionally */
+    object-fit: cover; /* Ensure images cover the entire container */
+  }
+  /* .gallery-info p {
+    font-size: 13px;
+  } */
+  .gallery_btn {
+    width: 70%;
+    height: 60px;
+    font-size: 22px;
+  }
+  .members-section {
+    margin-top: 5%;
+  }
+  .members-section h1 {
+    font-size: 28px;
+  }
+  .members-section div {
+    flex-direction: column;
+  }
+  .members-section .card {
+    width: 100%;
+    height: auto;
+  }
+  .members-section .card img {
+    width: 30%;
+  }
+  .card .card-title {
+    font-size: 20px;
+  }
+  .card .card-text {
+    font-size: 15px;
+  }
+  .subscribe-section {
+    height: 10vh;
+  }
+
+  .subscribe-section p {
+    /* font-size: 13px; */
+    margin-bottom: 0;
+  }
+  .footer-section {
+    background-position: center;
+    /* height: 100vh; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .footer-section {
+    height: 28%;
+  }
+  .footer_data {
+    padding: 5% 11%;
+  }
+  .footer_data h5 {
+    font-size: 15px;
+  }
+  .footer_data h6 {
+    font-size: 10px;
+  }
+  .footer_data span,
+  .copywrite span {
+    font-size: 10px;
+  }
+}
