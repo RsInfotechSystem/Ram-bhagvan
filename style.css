@@ -60,8 +60,8 @@ span {
 }
 
 .carousel-indicators [data-bs-target] {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   border: none;
   border-radius: 10px;
 }
@@ -75,7 +75,8 @@ span {
 .carousel-item img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  /* object-fit: cover; */
+  object-fit: contain;
 }
 /* Welcom section */
 .welcome-section {
@@ -160,9 +161,14 @@ span {
   font-size: 47px;
 }
 .gallery-image {
-  width: 29%;
+  width: 33%;
   height: auto;
   object-fit: cover; /* Ensure images cover the entire container */
+}
+.six-image {
+  width: 17%;
+  height: auto;
+  object-fit: cover;
 }
 .gallery-info p {
   font-size: 22px;
