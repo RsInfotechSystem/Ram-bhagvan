@@ -28,9 +28,9 @@
   .welcome-content div h1 {
     font-size: 28px;
   }
-  /* .welcome-content div p {
+  .welcome-content div p {
     font-size: 13px;
-  } */
+  }
   .marquee-image {
     width: 10%;
   }
@@ -41,9 +41,9 @@
   .visit-content h1 {
     font-size: 28px;
   }
-  /* .visit-content p {
+  .visit-content p {
     font-size: 13px;
-  } */
+  }
   .visit-content button {
     width: 50%;
     height: 50px;
@@ -63,9 +63,9 @@
     height: auto;
     object-fit: cover; /* Ensure images cover the entire container */
   }
-  /* .gallery-info p {
+  .gallery-info p {
     font-size: 13px;
-  } */
+  }
   .gallery_btn {
     width: 30%;
     height: 50px;
@@ -81,9 +81,9 @@
     width: 27%;
     height: auto;
   }
-  /* .subscribe-section p {
+  .subscribe-section p {
     font-size: 15px;
-  } */
+  }
   .footer-section {
     background-position: center;
     height: 72vh;
@@ -127,40 +127,40 @@
   .welcome-section {
     padding: 0;
   }
-  /* .welcome-content div h1 {
+  .welcome-content div h1 {
     font-size: 28px;
-  } */
-  /* .welcome-content div p {
+  }
+  .welcome-content div p {
     font-size: 13px;
-  } */
+  }
   .marquee-image {
     width: 11%;
   }
   .visit-section {
     padding: 0;
   }
-  /* .visit-content h1 {
+  .visit-content h1 {
     font-size: 28px;
-  } */
-  /* .visit-content p {
+  }
+  .visit-content p {
     font-size: 13px;
-  } */
+  }
   .visit-content button {
     width: 70%;
     height: 60px;
     font-size: 22px;
   }
-  /* .gallery-content h1 {
+  .gallery-content h1 {
     font-size: 28px;
-  } */
+  }
   .gallery-image {
     width: 50%; /* Set width to 100% to ensure responsiveness */
     height: auto; /* Allow height to adjust proportionally */
     object-fit: cover; /* Ensure images cover the entire container */
   }
-  /* .gallery-info p {
+  .gallery-info p {
     font-size: 13px;
-  } */
+  }
   .gallery_btn {
     width: 70%;
     height: 60px;
@@ -193,7 +193,7 @@
   }
 
   .subscribe-section p {
-    /* font-size: 13px; */
+    font-size: 13px;
     margin-bottom: 0;
   }
   .footer-section {
