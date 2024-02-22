@@ -47,7 +47,6 @@
         "./images/marquee16.svg",
         "./images/marquee17.svg",
         "./images/marquee12.svg",
-        // "./images/marquee10 19.svg",
       ];
       var photos = [
         "./images/gallery-img1.svg",
@@ -58,7 +57,7 @@
         "./images/gallery-img6.svg",
         "./images/gallery-img7.svg",
       ];
-
+      var imgPath;
       function bodyLoad() {
         marquee1.map(function (path) {
           var marquee1 = document.createElement("img");
@@ -80,10 +79,14 @@
           img.classList.add("gallery-image");
           if (index === 6) {
             img.classList.add("six-image");
-          }
-          else if (index === 5) {
+          } else if (index === 5) {
             img.classList.add("six-image");
           }
+          // img.addEventListener("click", function () {
+          //   imgPath = path;
+          //   document.getElementById("img-container").src = imgPath;
+          //   document.getElementById("gallery-img").style.display = "none";
+          // });
           document.getElementById("gallery").appendChild(img);
         });
       }
@@ -96,15 +99,64 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <main class="container-fluid">
       <!-- Header Section -->
       <section class="header-container row d-flex align-items-center">
         <div class="logo-section col-lg-4 col-md-4 col-sm-12 d-flex align-items-center gap-3">
-          <img src="./images/navLogo.svg" alt="logo" />
+          <img src="./images/navLogo.svg" alt="logo" class="ms-lg-2 ms-md-2" />
           <h1>God Ram Temple Organization</h1>
+          <div class="hamburger">
+            <button
+              class="btn"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+              aria-controls="offcanvasRight"
+              id="hamburgerBtn"
+            >
+              <span class="bi bi-list"></span>
+            </button>
+
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div class="offcanvas-header">
+                <div id="offcanvasRightLabel" class="d-flex align-items-center">
+                  <div><img src="./images/navLogo.svg" alt="logo" /></div>
+                  <h6>God Ram Temple Organization</h6>
+                </div>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="align-items-center">
+                  <ul class="hambergur-navlinks">
+                    <li data-bs-dismiss="offcanvas"><a href="#about">About</a></li>
+                    <li data-bs-dismiss="offcanvas"><a href="#visit">Visit</a></li>
+                    <li data-bs-dismiss="offcanvas"><a href="#galleryLink">Gallery</a></li>
+                    <li data-bs-dismiss="offcanvas"><a href="#member">Members</a></li>
+                    <li data-bs-dismiss="offcanvas">
+                      <a href="tel:+919876598765">Contact: +91-987 659 8765</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="navigation-section col-lg-8 col-md-8 col-sm-12 align-items-center">
+        <div class="navigation-section col-lg-8 col-md-8 col-sm-12 align-items-center" id="navBar">
           <ul class="nav-links-list d-flex justify-content-around align-items-center">
             <li><a href="#about">About</a></li>
             <li><a href="#visit">Visit</a></li>
@@ -176,11 +228,11 @@
       <section class="marquee-container">
         <div id="marquee_top" class="marquee col-lg-12 col-md-12 col-sm-12"></div>
       </section>
-      <section class="marquee-container">
+      <section class="marquee-container mt-lg-4 mt-md-2">
         <div id="marquee_bottom" class="marquee col-lg-12 col-md-12 col-sm-12"></div>
       </section>
       <!-- visit section -->
-      <section class="visit-section row" id="visit">
+      <section class="visit-section row my-sm-5" id="visit">
         <div
           class="visit-image col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center"
         >
@@ -201,18 +253,23 @@
         </div>
       </section>
       <!-- Gallery Section -->
-      <section class="gallery-section row d-flex justify-content-center mt-4" id="galleryLink">
-        <div class="gallery-content col-lg-8 col-md-12 col-sm-12">
-          <h1 class="text-center">Temple Gallery</h1>
-          <div id="gallery" class="d-flex flex-wrap justify-content-center mt-4"></div>
-        </div>
-        <div class="gallery-info text-center col-lg-8 col-md-12 col-sm-12">
-          <p class="mt-4">Browse through our extensive gallery of high quality images of Temple</p>
-          <button class="gallery_btn mt-3">See All</button>
-        </div>
-      </section>
+      <div id="gallery-container"><img id="img-container" width="100px" height="100px" /></div>
+      <div id="gallery-img">
+        <section class="gallery-section row d-flex justify-content-center my-sm-5" id="galleryLink">
+          <div class="gallery-content col-lg-10 col-md-12 col-sm-12">
+            <h1 class="text-center">Temple Gallery</h1>
+            <div id="gallery" class="d-flex flex-wrap justify-content-center mt-4"></div>
+          </div>
+          <div class="gallery-info text-center col-lg-8 col-md-12 col-sm-12">
+            <p class="mt-4">
+              Browse through our extensive gallery of high quality images of Temple
+            </p>
+            <button class="gallery_btn mt-3">See All</button>
+          </div>
+        </section>
+      </div>
       <!-- Member Section -->
-      <section class="members-section row" id="member">
+      <section class="members-section row my-sm-5" id="member">
         <div class="text-center">
           <h1 class="">Members of temple</h1>
           <div class="d-flex justify-content-center mt-4 gap-4 m-md-3">
@@ -253,21 +310,17 @@
         </div>
       </section>
       <!-- Subscribe Section -->
-      <section
-        class="subscribe-section row mt-5 d-flex align-items-center"
-        style="background-color: #af3100"
-      >
-        <div
-          class="subscribe-content col-lg-6 col-md-6 col-sm-12 d-flex justify-content-evenly align-items-center gap-md-3"
-        >
-          <p class="">SUBSCRIBE TO US</p>
-          <input class="w-50" />
+      <section class="subscribe-section row mt-5 justify-content-center align-items-center">
+        <div class="subscribe-content col-lg-6 col-md-8 col-9 gap-md-3">
+          <div class="row">
+            <div class="col-6 text-center"><p>SUBSCRIBE TO US</p></div>
+            <div class="col-6"><input class="subscribe-input" /></div>
+          </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
-          <p class="">JOIN WITH US</p>
+        <div class="col-lg-6 col-md-4 col-3 text-center">
+          <p>JOIN WITH US</p>
         </div>
       </section>
-      <!-- contact Section -->
       <section id="contact">
         <div class="row footer-section">
           <div class="footer_data col-lg-12 col-md-12 col-sm-12">
@@ -295,7 +348,7 @@
               </div>
             </div>
           </div>
-          <div class="copywrite col-lg-12 col-md-12 col-sm-12 ps-lg-5 mt-lg-0 pb-lg-1">
+          <div class="copywrite col-lg-12 col-md-12 col-sm-12 ps-lg-5 mt-lg-0 pb-lg-1 ms-md-2">
             <span>© 2024 Satyapan Org,</span>
             <span>|</span>
             <span>Privacy Policy</span>
@@ -305,5 +358,24 @@
         </div>
       </section>
     </main>
+    <script>
+      function handleResize() {
+        if (window.innerWidth <= 767) {
+          // Condition: render hamburger menu for small screens
+          document.getElementById("hamburgerBtn").style.display = "block";
+          document.getElementById("navBar").style.display = "none";
+        } else {
+          // Condition: hide hamburger menu for larger screens
+          document.getElementById("hamburgerBtn").style.display = "none";
+          document.getElementById("navBar").style.display = "block";
+        }
+      }
+
+      // Call the function initially
+      handleResize();
+
+      // Add event listener for window resize
+      window.addEventListener("resize", handleResize);
+    </script>
   </body>
 </html>

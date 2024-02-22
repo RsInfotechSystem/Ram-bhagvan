@@ -51,6 +51,17 @@
   }
   .marquee-container {
     margin-top: 5%;
+    width: 97vw;
+    height: 14vh;
+    overflow: hidden;
+  }
+  .marquee-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    /* gap: 10px; */
+    flex-shrink: 0;
   }
   .gallery-section {
     margin-top: 5%;
@@ -62,6 +73,11 @@
     width: 26%;
     height: auto;
     object-fit: cover; /* Ensure images cover the entire container */
+    transition: transform 0.3s;
+  }
+  .gallery-image:hover {
+    /* width: 70%; */
+    transform: scale(1.6);
   }
   .six-image {
     width: 13%;
@@ -84,12 +100,18 @@
     width: 27%;
     height: auto;
   }
+  .subscribe-content input {
+    border: none;
+    border-radius: 5px;
+    height: 5vh;
+  }
   .subscribe-section p {
     font-size: 15px;
+    transform: translate(6px, 7px);
   }
   .footer-section {
     background-position: center;
-    height: 72vh;
+    /* height: 72vh; */
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -118,7 +140,7 @@
   }
 
   .logo-section h1 {
-    font-size: 17px;
+    font-size: 14px;
   }
   .logo-section img {
     height: 32px;
@@ -128,6 +150,41 @@
     font-size: 10px;
     transform: translate(0px, 0px);
   }
+  /* hamburger menu */
+  .hamburger {
+    margin-left: 35px;
+  }
+  .offcanvas {
+    width: 250px;
+    background-color: #af3100;
+  }
+  .offcanvas-body {
+    /* background-color: #af3100; */
+  }
+  .hambergur-navlinks {
+    list-style: none;
+  }
+  .hambergur-navlinks li {
+    margin-top: 10%;
+    margin-top: 22%;
+    font-size: 13px;
+  }
+  .hambergur-navlinks li a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .offcanvas-header {
+    padding: 1rem 0.6rem;
+  }
+  #offcanvasRightLabel img {
+    width: 26px;
+    height: 27px;
+  }
+  #offcanvasRightLabel h6 {
+    font-size: 11px;
+    transform: translate(4px, 4px);
+  }
+
   .welcome-section {
     padding: 0;
   }
@@ -138,7 +195,7 @@
     font-size: 13px;
   }
   .marquee-image {
-    width: 11%;
+    width: 30%;
   }
   .visit-section {
     padding: 0;
@@ -161,11 +218,15 @@
     width: 50%; /* Set width to 100% to ensure responsiveness */
     height: auto; /* Allow height to adjust proportionally */
     object-fit: cover; /* Ensure images cover the entire container */
+    transition: transform 0.3s;
+  }
+  .gallery-image:hover {
+    /* width: 70%; */
+    transform: scale(1.2);
   }
   .six-image {
     width: 25%;
   }
-
   .gallery-info p {
     font-size: 13px;
   }
@@ -197,12 +258,20 @@
     font-size: 15px;
   }
   .subscribe-section {
+    flex-wrap: nowrap;
+    flex-shrink: 1;
     height: 10vh;
+  }
+  .subscribe-content .subscribe-input {
+    width: 80%;
+    height: 22px;
+    border-radius: 3px;
   }
 
   .subscribe-section p {
     font-size: 13px;
     margin-bottom: 0;
+    transform: translate(0px, 0px);
   }
   .footer-section {
     background-position: center;
