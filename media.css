@@ -31,9 +31,6 @@
   .welcome-content div p {
     font-size: 13px;
   }
-  .marquee-image {
-    width: 10%;
-  }
   .visit-section {
     padding: 0;
     margin-top: 5%;
@@ -59,9 +56,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15vw;
+    width: 17vw;
     /* gap: 10px; */
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
   }
   .gallery-section {
     margin-top: 5%;
@@ -140,7 +137,7 @@
   }
 
   .logo-section h1 {
-    font-size: 14px;
+    font-size: 11px;
   }
   .logo-section img {
     height: 32px;
@@ -210,6 +207,14 @@
     width: 70%;
     height: 60px;
     font-size: 22px;
+  }
+  .marquee-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    /* gap: 10px; */
+    /* flex-shrink: 0; */
   }
   .gallery-content h1 {
     font-size: 28px;
